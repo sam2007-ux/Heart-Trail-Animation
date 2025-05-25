@@ -1,0 +1,27 @@
+body {
+    margin: 0;
+    height: 100vh;
+    background-color: black;
+    overflow: hidden;
+  }
+  
+  span {
+    background: url("https://cdn2.iconfinder.com/data/icons/free-1/128/Love__heart_like-1024.png");
+    position: absolute;
+    pointer-events: none;
+    background-size: cover;
+    animation: animate 6s linear;
+  }
+  
+  @keyframes animate {
+    0% {
+      opacity: 1;
+      transform: translateY(0);
+      filter: hue-rotate(0);
+    }
+    100% {
+      opacity: 0;
+      transform: translateY(-300px);
+      filter: hue-rotate(720deg);
+    }
+  }
